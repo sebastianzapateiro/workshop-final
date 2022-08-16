@@ -274,6 +274,7 @@ export const Subsec5 =  styled.section`
 display: grid;
 grid-template-columns: repeat(2, 1fr);;
 grid-gap: 16px;
+margin: 0 auto;
 
 `;
 export const ImgDificulty =  styled.img`

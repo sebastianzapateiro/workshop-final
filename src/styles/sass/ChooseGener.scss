@@ -1,0 +1,30 @@
+.chose-gener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    label{
+        height: 130px;
+        width: 130px;
+        border: 1px solid #2E3562;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=radio]{
+        display: none;
+
+        &:checked + label{
+            transition: 0.25s;
+            background-color: #2E3562;
+        }
+    }
+
+    svg{
+        color: #2BE7E8;
+        *{
+            color: #2BE7E8;
+        }
+    }
+}

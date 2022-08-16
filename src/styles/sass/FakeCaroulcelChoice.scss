@@ -1,0 +1,25 @@
+.fake{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    .main-text{
+        font-size: 24px; opacity: 1; margin-bottom: 40px;
+    }
+
+
+    button[type=submit]{
+        background: var(--main-color);
+        border: none;
+        height: 44px;
+        border-radius: 99px;
+        width: calc( 100% - ( 16px * 2 ) );
+        margin: 60px 0 30px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{ background: #44cab2 }
+    }
+}

@@ -1,0 +1,13 @@
+.sing-whit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    h2{ margin-bottom: 16px ;}
+    &-icon{
+        display: flex;
+        svg{ padding: 8px; cursor: pointer;}
+        svg:nth-child(1){ border-right: 1px 
+            solid #363D6B }
+    }
+}

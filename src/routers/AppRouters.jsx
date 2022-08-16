@@ -8,7 +8,6 @@ import Welcome from '../containers/init/Welcome';
 import PhoneVerification from '../containers/init/PhoneVerification';
 import { PrivateRouter } from './PrivateRouter';
 import { useSelector } from 'react-redux';
-<<<<<<< HEAD
 import NavHome from '../containers/test/NavHome';
 import UserEdit from '../containers/init/UserEdit';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -16,10 +15,8 @@ import HomeBuy from '../containers/HomeBuy/HomeBuy';
 import Favorite from '../containers/home/Favorite';
 import Cart from '../containers/home/Cart';
 
-=======
 import HomeBuy from '../containers/HomeBuy/HomeBuy';
 import Search from '../containers/HomeBuy/Search';
->>>>>>> origin/esteban
 
 const AppRouters = () => {
     const [auth, setAuth] = useState(true);
@@ -46,23 +43,13 @@ const AppRouters = () => {
     return (
         <BrowserRouter>
 
-<<<<<<< HEAD
             <Routes>
-                <Route path="/" element={<Init />} />
-                <Route path="*" element={<Init />} />
-                <Route path="/init/welcome" element={<Welcome />} />
-
-                <Route path="/init/sing-in" element={<SingIn />} />
-                <Route path="/init/sign-up" element={<SignUp />} />
-                
-                <Route path="/init/phone" element={<PhoneVerification />} />
-                <Route path="/init/choice" element={<Choices />} />
-                {/* test */}
-                <Route path="/favorite" element={ <Favorite/> }/>
-                <Route path="/cart" element={ <Cart/> }/>
+           
+            
+             
+               
 
                 <Route path="/home" element={ <HomeBuy/> }/>
-=======
             
             <Routes>
                 <Route path="/" element={ <Init/> }/>
@@ -73,10 +60,12 @@ const AppRouters = () => {
                 <Route path="/init/sign-up" element={ <SignUp/> }/>
                 <Route path="/init/phone" element={ <PhoneVerification/> }/>
                 <Route path="/init/choice" element={ <Choices/> }/>
+                
+                <Route path="/favorite" element={ <Favorite/> }/>
+                <Route path="/cart" element={ <Cart/> }/>
 
                 <Route path="/Home" element={ <HomeBuy/> }/>
                 <Route path="/Search" element={ <Search/> }/>
->>>>>>> origin/esteban
 
                 <Route path='/init/phone-verification' element={<PrivateRouter isAutentication={auth}> <PhoneVerification /> </PrivateRouter>} />
                 <Route path="/init/user/:userId" element={<UserEdit />} />

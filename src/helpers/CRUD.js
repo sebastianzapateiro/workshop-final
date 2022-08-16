@@ -4,7 +4,7 @@ import { collection, query, where, getDocs, setDoc, doc } from "firebase/firesto
 import { db } from "../firebase-config";
 
 
-export const enivarDator = async (datos,id) =>{
+export const enviarDatos = async (datos,id) =>{
     
     await setDoc(doc(db, "datosUsuario", id), datos);
 

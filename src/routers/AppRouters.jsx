@@ -13,6 +13,8 @@ import UserEdit from '../containers/init/UserEdit';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import HomeBuy from '../containers/HomeBuy/HomeBuy';
 import Cart from '../containers/home/Cart';
+import Favorite from '../containers/home/Favorite';
+
 
 const AppRouters = () => {
     const [auth, setAuth] = useState(true);
@@ -51,7 +53,6 @@ const AppRouters = () => {
                 {/* test */}
                 <Route path="/favorite" element={ <Favorite/> }/>
                 <Route path="/cart" element={ <Cart/> }/>
-                <Route path="/Home" element={ <HomeBuy/> }/>
 
                 <Route path='/init/phone-verification' element={<PrivateRouter isAutentication={auth}> <PhoneVerification /> </PrivateRouter>} />
                 <Route path="/init/user/:userId" element={<UserEdit />} />

@@ -25,7 +25,7 @@ const Init = () => {
     return (
         <div style={ style }>
             <img src={ Logo } alt="" />
-            <h1>Buffalo</h1>
+            
         </div>
     );
 };

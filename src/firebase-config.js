@@ -10,13 +10,13 @@ import {getFirestore, collection, getDocs} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCrCktVh-HZOicfI2PFCTxZpu7PEBRODF4",
-  authDomain: "bufaloapp-776b4.firebaseapp.com",
-  projectId: "bufaloapp-776b4",
-  storageBucket: "bufaloapp-776b4.appspot.com",
-  messagingSenderId: "38844000198",
-  appId: "1:38844000198:web:ce9b5808e60884fa2074c7",
-  measurementId: "G-5TP3WLB7M8"
+  apiKey: "AIzaSyCls9WNpNMibDSIaf09EwW5vnw_Y349q-M",
+  authDomain: "workshop-final-65cf4.firebaseapp.com",
+  projectId: "workshop-final-65cf4",
+  storageBucket: "workshop-final-65cf4.appspot.com",
+  messagingSenderId: "335996890613",
+  appId: "1:335996890613:web:9febdd1e54c10791ff84bc",
+  measurementId: "G-9BR451K8MB"
 };
 
 // Initialize Firebase

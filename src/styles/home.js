@@ -1,4 +1,11 @@
+
 import styled from "styled-components";
+
+
+
+export const Div = styled.div`
+    font-family: 'Raleway', sans-serif;
+`
 
 
 export const Section1 = styled.section`
@@ -22,10 +29,16 @@ export const Div1 = styled.div`
 export const H3 = styled.h3`
     
 
+
 width: 94px;
 height: 14.63px;
 left: 64px;
 
+
+
+width: 94px;
+height: 14.63px;
+left: 64px;
 
 font-family: 'Raleway';
 font-style: normal;
@@ -34,11 +47,9 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: -0.3px;
 
-/* White */
 
-color: #FFFFFF;
+color: #474747
 
- 
 `;
 export const P1 = styled.p`
     
@@ -47,6 +58,9 @@ height: 14.63px;
 left: 64px;
 
 
+
+
+
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
@@ -54,11 +68,10 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: -0.3px;
 
-/* White */
 
-color: #FFFFFF;
 
- 
+color: #474747;
+
 `;
 
 export const Img1 = styled.img`
@@ -94,6 +107,12 @@ background : #B4FFD8;
 border-radius: 11px;
     
 
+
+/* Additional shade of the main color */
+background: #2E3562;
+border-radius: 11px;
+    
+
 `;
 export const P = styled.p`
 position: absolute;
@@ -102,6 +121,8 @@ height: 37px;
 left: 32px;
 top: 165px;
 
+
+
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 300;
@@ -109,35 +130,33 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: -0.3px;
 
+
 /* White */
 
 color:#474747;
 `;
 export const H52 = styled.h5`
-position: absolute;
+
 width: 30vh;
 height: 21px;
-left: 12px;
-top: 128px;
+left: 32px;
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-letter-spacing: -0.3px;
+
 
 /* White */
-
-color: #474747;
+color:#474747;
 `;
+
 
 export const Div5 = styled.div`
 margin-left:60%;
 
+
 `;
+
 export const Div4 = styled.div`
+
+
 
 `;
 export const Img3 = styled.img`
@@ -145,11 +164,18 @@ margin-top:16%;
 width: 55px;
 height: 99px;
 
+
 `;
+
+
 export const Section3 = styled.section`
-width: 60vh;
+width: 87%;
+height: 32px;
 margin: 5% auto;
-background: white;
+border-radius: 11px;
+display:flex;
+background: #2E3562;
+
 `;
 export const Div6 = styled.div`
 width: 50%;
@@ -167,6 +193,7 @@ width: 50%;
 height: 100%;
 display:flex;
 /* Optional second color */
+
 
 border-radius: 62px;
 `;
@@ -191,32 +218,57 @@ height: 16px;
 background: #2E3562;
 border-radius: 37px;
 `;
+
+
+
+
+
+export const FilterContain = styled.section`
+    width: 95%;
+    height: 5%;
+    display: grid;
+    gap: 4px;
+    margin: auto;
+    grid-template-columns: repeat( 6, 1fr );
+    justify-items: center;
+    .active{
+        background: #2BE7E8
+    }
+`;
+//Option To Filter
+export const OptToFilter = styled.button`
+    min-width: 54px;
+    height: 16px;
+    padding: 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Additional shade of the main color */
+    border: none;
+    font-size: 8px;
+    border-radius: 37px;
+    background: ${props => props.primary 
+    ?"#2BE7E8" : "#2E3562"};
+    
+`;
 export const H6 = styled.h6`
-
-text-align:center;
-
+    text-align:center;
 `;
 
 export const Div9 = styled.div`
-
 width: 91.79%;
 height: 30.98vh;
 margin: 5% auto;
-
-
 /* Additional shade of the main color */
-
 background: #2E3562;
 border-radius: 11px;
-
 `;
 
 export const Section5 = styled.section`
+display:block;
+margin: 15% auto;
 
-width: 60vh;
-height: 25vh;
-margin: 5% auto;
-background:white;
 `;
 
 export const Img10 = styled.img`
@@ -226,10 +278,12 @@ height: 61%;
 index:-20;
 
 
+
 background: white;
 border-radius: 11px 11px 0px 0px;
 `;
 export const H2 =  styled.h2`
+
 
 text-align:left;
 width: 25vh;
@@ -250,11 +304,25 @@ letter-spacing: -0.3px;
 
 color: #474747;
 
+
+width: 203px;
+height: 21px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: -0.3px;
+/* White */
+color: #FFFFFF;
+
 `;
 export const P3 =  styled.p`
 width: 184px;
 height: 30px;
 margin-top:1.3%;
+
+
 
 font-family: 'Raleway';
 font-style: normal;
@@ -263,17 +331,17 @@ font-size: 9px;
 line-height: 11px;
 letter-spacing: -0.3px;
 
+
 /* White */
 
 color: #FFFFFF;
 
 `;
-export const Subsec5 =  styled.section`
 
-display: grid;
-grid-template-columns: repeat(2, 1fr);;
-grid-gap: 16px;
-margin: 0 auto;
+export const Subsec5 =  styled.section`
+width: 326px;
+height: 59px;
+margin: 0 5%;
 
 `;
 export const ImgDificulty =  styled.img`
@@ -284,11 +352,17 @@ margin-top:10px
 `;
 export const Subsec6 = styled.section`
 
+margin-right:4%;
+
 `;
 export const Subdiv9 = styled.div`
 display:flex;
 `;
 export const H66 = styled.h6`
+
+
+width: 51px;
+height: 16px;
 
 width: 51px;
 height: 16px;
@@ -307,6 +381,7 @@ color: #FFFFFF;
 
 `;
 
+
 export const H55 = styled.h5`
 
 width: 28px;
@@ -314,12 +389,15 @@ height: 12px;
 margin-left:20px;
 margin-top:20px;
 
+
+
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 500;
 font-size: 10px;
 line-height: 12px;
 /* identical to box height */
+
 
 letter-spacing: -0.3px;
 
@@ -329,3 +407,27 @@ color: #2BE7E8;
 
 
 `;
+
+
+/*Estilos para barra de navegación :D*/
+
+export const TOptionNav = styled.p`
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+color: black;
+`;
+export const ImgNav = styled.img`
+width: 12px;
+height: 12.15px;
+`;
+export const DivNav = styled.div`
+display: flex;
+flex-direction:row;
+gap:10px;
+align-items:cener;
+padding-top:10px;
+margin-left:6%;
+`
+

@@ -9,7 +9,7 @@ const Favorite = () => {
             <h2 className='text-main'>Favorite</h2>
             <div className="generit-container">
                 <CardProductAD name={'Come comida 3000'} price={ Math.PI } distance={35}/>
-                <CardProductAD name={'Come comida 3000'} price={ Math.PI } distance={35}/>
+                <CardProductAD name={'Come comida 3000'} price={ 5000 } distance={35}/>
             </div>
         </div>
     );

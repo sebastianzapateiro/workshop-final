@@ -173,13 +173,14 @@ border-radius: 62px;
 `;
 
 export const Section4 = styled.section`
-position: absolute;
+
 width: 95%;
 height: 5%;
 left:2.5%;
 display:flex;
 justify-content: space-around;
-gap:2%;margin
+margin-top: 20vh;
+gap:2%;
 
 `;
 export const Div8 = styled.div`
@@ -329,4 +330,21 @@ letter-spacing: -0.3px;
 color: #2BE7E8;
 
 
+`;
+
+export const Div10 = styled.div`
+display:flex;
+width: 60vh;
+height: 5vh;
+justify-content: space-around;
+margin-bottom: 10px; 
+/* White */
+margin-top:40px;
+
+
+`;
+
+export const Img6 = styled.img`
+width: 24px;
+height: 24px;
 `;

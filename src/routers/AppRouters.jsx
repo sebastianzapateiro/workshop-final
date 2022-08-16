@@ -9,6 +9,7 @@ import PhoneVerification from '../containers/init/PhoneVerification';
 import { PrivateRouter } from './PrivateRouter';
 import { useSelector } from 'react-redux';
 import HomeBuy from '../containers/HomeBuy/HomeBuy';
+import Search from '../containers/HomeBuy/Search';
 
 const AppRouters = () => {
 const [auth, setAuth] = useState(true);
@@ -34,6 +35,7 @@ const usuario = useSelector(store => store.valoresUsuario)
                 <Route path="/init/choice" element={ <Choices/> }/>
 
                 <Route path="/Home" element={ <HomeBuy/> }/>
+                <Route path="/Search" element={ <Search/> }/>
 
                 <Route path='/init/phone-verification' element={<PrivateRouter isAutentication={auth}> <PhoneVerification /> </PrivateRouter>} />
                 

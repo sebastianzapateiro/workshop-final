@@ -12,13 +12,15 @@ import NavHome from '../containers/test/NavHome';
 import UserEdit from '../containers/init/UserEdit';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import HomeBuy from '../containers/HomeBuy/HomeBuy';
+import Cart from '../containers/home/Cart';
 
 const AppRouters = () => {
     const [auth, setAuth] = useState(true);
     const usuario = useSelector(store => store.valoresUsuario)
 
     useEffect(()=>{
-    console.log(usuario);
+        console.log(usuario);
+    })
 
     useEffect(() => {
         const auth = getAuth();
@@ -37,8 +39,6 @@ const AppRouters = () => {
     return (
         <BrowserRouter>
 
-<<<<<<< HEAD
-            
             <Routes>
                 <Route path="/" element={<Init />} />
                 <Route path="*" element={<Init />} />
@@ -48,7 +48,9 @@ const AppRouters = () => {
                 <Route path="/init/sign-up" element={<SignUp />} />
                 <Route path="/init/phone" element={<PhoneVerification />} />
                 <Route path="/init/choice" element={<Choices />} />
-
+                {/* test */}
+                <Route path="/favorite" element={ <Favorite/> }/>
+                <Route path="/cart" element={ <Cart/> }/>
                 <Route path="/Home" element={ <HomeBuy/> }/>
 
                 <Route path='/init/phone-verification' element={<PrivateRouter isAutentication={auth}> <PhoneVerification /> </PrivateRouter>} />

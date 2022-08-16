@@ -18,7 +18,7 @@ const SingWhit = ({ children }) => {
 
     const handleGoogle = () => {
         dispatch(loginGoogle())
-        navigate('/init/profile')
+        //navigate('/init/profile')
     }
 
     return (

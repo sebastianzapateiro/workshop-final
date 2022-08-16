@@ -13,20 +13,22 @@ export const loginGoogle = () => {
         const auth = getAuth();
         const provider = new GoogleAuthProvider();
 
-        signInWithPopup( auth, provider )
-        .then( ({user: {displayName, email, photoURL}}) => dispatch(loginProvider(displayName, email, photoURL)) )
-        .catch((error) => {
-            console.log(error);
-          });
+        signInWithPopup(auth, provider)
+            .then(({ user: { uid, displayName, email, photoURL } }) => dispatch(loginProvider(uid, displayName, email, photoURL)))
+            .catch((error) => {
+                console.log(error);
+            });
     }
 }
-const loginProvider = ( displayName, email, photoURL ) => {
+const loginProvider = (uid,displayName, email, photoURL) => {
     return {
         type: types.login,
         payload: {
+            uid,
             displayName,
             email,
             photoURL
         }
     }
 }
+

@@ -3,6 +3,7 @@ import React from 'react';
 import { BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { signInWithFacebook, signInWithGoogle } from '../../firebase-config';
 import { loginGoogle } from '../../redux/actions/actions';
 
@@ -13,9 +14,11 @@ import '../../styles/sass/SingWhit.scss'
 const SingWhit = ({ children }) => {
     
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleGoogle = () => {
         dispatch(loginGoogle())
+        navigate('/init/profile')
     }
 
     return (

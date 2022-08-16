@@ -1,0 +1,13 @@
+.generit-f-c{
+    .text-main{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .generit-container{
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        justify-items: center;
+        gap: 16px;
+    }
+}

@@ -46,17 +46,10 @@ font-weight: 400;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: -0.3px;
-<<<<<<< HEAD
-
-/* White */
-
-color: #FFFFFF;
 
 
-/* White */
-color: #FFFFFF;
+color: #474747
 
- 
 `;
 export const P1 = styled.p`
     
@@ -76,15 +69,9 @@ line-height: 16px;
 letter-spacing: -0.3px;
 
 
-/* White */
 
-color: #FFFFFF;
+color: #474747;
 
-
-/* White */
-color: #FFFFFF;
-
- 
 `;
 
 export const Img1 = styled.img`
@@ -113,7 +100,6 @@ margin: 0 auto;
 margin-top: 12%;
 display: flex;
 justify-content: center;
-<<<<<<< HEAD
 
 /* Additional shade of the main color */
 
@@ -150,15 +136,15 @@ letter-spacing: -0.3px;
 color:#474747;
 `;
 export const H52 = styled.h5`
-position: absolute;
+
 width: 30vh;
 height: 21px;
-left: 12px;
-top: 128px;
+left: 32px;
 
 
-/* White */
-color: #FFFFFF;
+
+
+color:#474747;
 `;
 
 
@@ -177,7 +163,7 @@ export const Img3 = styled.img`
 margin-top:16%;
 width: 55px;
 height: 99px;
-<<<<<<< HEAD
+
 
 `;
 

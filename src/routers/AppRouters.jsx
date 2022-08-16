@@ -14,7 +14,6 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import HomeBuy from '../containers/HomeBuy/HomeBuy';
 import Favorite from '../containers/home/Favorite';
 import Cart from '../containers/home/Cart';
-import Favorite from '../containers/home/Favorite';
 
 
 const AppRouters = () => {
@@ -54,6 +53,8 @@ const usuario = useSelector(store => store.valoresUsuario)
                 {/* test */}
                 <Route path="/favorite" element={ <Favorite/> }/>
                 <Route path="/cart" element={ <Cart/> }/>
+
+                <Route path="/home" element={ <HomeBuy/> }/>
 
                 <Route path='/init/phone-verification' element={<PrivateRouter isAutentication={auth}> <PhoneVerification /> </PrivateRouter>} />
                 <Route path="/init/user/:userId" element={<UserEdit />} />

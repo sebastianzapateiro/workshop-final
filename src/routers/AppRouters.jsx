@@ -12,6 +12,7 @@ import NavHome from '../containers/test/NavHome';
 import UserEdit from '../containers/init/UserEdit';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import HomeBuy from '../containers/HomeBuy/HomeBuy';
+import Favorite from '../containers/home/Favorite';
 
 const AppRouters = () => {
 const [auth, setAuth] = useState(true);

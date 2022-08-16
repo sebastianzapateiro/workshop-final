@@ -88,7 +88,7 @@ export const signInWithFacebook = () => {
 //Implementando Firestore
 
 // Inicialización de servicio Firestore
-const db = getFirestore();
+export const db = getFirestore();
 
 // Referencia a colecciones
 

@@ -17,8 +17,8 @@ import Favorite from '../containers/home/Favorite';
 
 
 const AppRouters = () => {
-    const [auth, setAuth] = useState(true);
-    const usuario = useSelector(store => store.valoresUsuario)
+const [auth, setAuth] = useState(true);
+const usuario = useSelector(store => store.valoresUsuario)
 
     useEffect(()=>{
         console.log(usuario);
@@ -45,7 +45,7 @@ const AppRouters = () => {
                 <Route path="/" element={<Init />} />
                 <Route path="*" element={<Init />} />
                 <Route path="/init/welcome" element={<Welcome />} />
-                <Route path="/init/sing-in"
+                <Route path="/init/sing-in" 
                     element={<SingIn />} />
                 <Route path="/init/sign-up" element={<SignUp />} />
                 <Route path="/init/phone" element={<PhoneVerification />} />
@@ -61,7 +61,7 @@ const AppRouters = () => {
                         <NavHome />
                     </PrivateRouter>
                 } />
-
+                
             </Routes>
         </BrowserRouter>
     );

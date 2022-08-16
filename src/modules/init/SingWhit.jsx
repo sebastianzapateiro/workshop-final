@@ -23,7 +23,7 @@ const SingWhit = ({ children }) => {
             <h2>{ children }</h2>
             <div className="sing-whit-icon">
                 <FcGoogle onClick={handleGoogle} size={25}/>
-                <BsFacebook onClick={signInWithFacebook} size={25}/>
+                
             </div>
         </div>
     );

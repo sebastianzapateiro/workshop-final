@@ -3,6 +3,13 @@ import React from 'react';
 import '../styles/sass/CardProduct.scss'
 
 const CardProductAD = ({ name, price, distance }) => {
+
+    const handleOnClick = e =>{
+        console.log('me estoy eliminando')
+        const x = e.target.parentNode.parentNode
+        x.remove()
+    }
+
     return (
         <div className='card-product'>
             <img src="" alt="not found"  className='card-product-img'/>
@@ -14,7 +21,7 @@ const CardProductAD = ({ name, price, distance }) => {
                 </div>
             </div>
             <footer className="card-product-footer">
-                <button className='del'>Delete</button>
+                <button className='del' onClick={ handleOnClick }>Delete</button>
             </footer>
         </div>
     );

@@ -43,14 +43,10 @@ const AppRouters = () => {
     return (
         <BrowserRouter>
 
-            <Routes>
            
             
              
                
-
-                <Route path="/home" element={ <HomeBuy/> }/>
-            
             <Routes>
                 <Route path="/" element={ <Init/> }/>
                 <Route path="*" element={ <Init/> }/>
@@ -60,7 +56,7 @@ const AppRouters = () => {
                 <Route path="/init/sign-up" element={ <SignUp/> }/>
                 <Route path="/init/phone" element={ <PhoneVerification/> }/>
                 <Route path="/init/choice" element={ <Choices/> }/>
-                
+
                 <Route path="/favorite" element={ <Favorite/> }/>
                 <Route path="/cart" element={ <Cart/> }/>
 

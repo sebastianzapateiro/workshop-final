@@ -4,6 +4,12 @@ import Recently from '../../modules/home/Recently';
 import Tips from '../../modules/home/Tips';
 
 
+import NavB from '../../modules/home/NavB';
+import Tips from '../../modules/home/Tips';
+
+import Recently from '../../modules/home/Recently';
+ 
+
 
 
 const HomeBuy = () => {
@@ -13,6 +19,7 @@ const HomeBuy = () => {
          <Tips/>
          <Recently/>
 
+         <NavB/>
         </div>
     );
 };

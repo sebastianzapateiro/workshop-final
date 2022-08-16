@@ -2,12 +2,15 @@
 import styled from "styled-components";
 
 
+<<<<<<< HEAD
 
 export const Div = styled.div`
     font-family: 'Raleway', sans-serif;
 `
 
 
+=======
+>>>>>>> origin/esteban
 export const Section1 = styled.section`
     
     width:100%;
@@ -29,17 +32,23 @@ export const Div1 = styled.div`
 export const H3 = styled.h3`
     
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/esteban
 width: 94px;
 height: 14.63px;
 left: 64px;
 
 
+<<<<<<< HEAD
 
 width: 94px;
 height: 14.63px;
 left: 64px;
 
+=======
+>>>>>>> origin/esteban
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
@@ -47,9 +56,17 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: -0.3px;
 
+<<<<<<< HEAD
 
 color: #474747
 
+=======
+/* White */
+
+color: #FFFFFF;
+
+ 
+>>>>>>> origin/esteban
 `;
 export const P1 = styled.p`
     
@@ -58,9 +75,12 @@ height: 14.63px;
 left: 64px;
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> origin/esteban
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
@@ -68,6 +88,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: -0.3px;
 
+<<<<<<< HEAD
 
 
 color: #474747;
@@ -145,6 +166,15 @@ margin-left:6%;
 `;
 
 
+=======
+/* White */
+
+color: #FFFFFF;
+
+ 
+`;
+
+>>>>>>> origin/esteban
 export const Img1 = styled.img`
 width: 32px;
 height: 32px;
@@ -256,13 +286,22 @@ border-radius: 62px;
 `;
 
 export const Section4 = styled.section`
+<<<<<<< HEAD
 position: absolute;
+=======
+
+>>>>>>> origin/esteban
 width: 95%;
 height: 5%;
 left:2.5%;
 display:flex;
 justify-content: space-around;
+<<<<<<< HEAD
 gap:2%;margin
+=======
+margin-top: 20vh;
+gap:2%;
+>>>>>>> origin/esteban
 
 `;
 export const Div8 = styled.div`
@@ -414,3 +453,22 @@ color: #2BE7E8;
 
 `;
 
+<<<<<<< HEAD
+=======
+export const Div10 = styled.div`
+display:flex;
+width: 60vh;
+height: 5vh;
+justify-content: space-around;
+margin-bottom: 10px; 
+/* White */
+margin-top:40px;
+
+
+`;
+
+export const Img6 = styled.img`
+width: 24px;
+height: 24px;
+`;
+>>>>>>> origin/esteban

@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react'
 import { useSelector } from 'react-redux'
-import { enivarDator } from '../../helpers/CRUD'
+import { enviarDatos } from '../../helpers/CRUD'
 import '../../styles/sass/UserEdit.scss'
 function UserEdit() {
 
@@ -18,13 +18,13 @@ function UserEdit() {
       telefono_: telefono.current.value,
       ubicacion_: ubicacion.current.value,
     }
-    enivarDator(datos,uid);
+    enviarDatos(datos,uid);
     
   }
 
   return (
     <div className='container'>
-      <img className='img-profile' src={photoURL} alt="" />
+      <img className='img-profile' src={photoURL} alt="None" />
 
 
       <form className='form-data' onSubmit={enviarDatos}>

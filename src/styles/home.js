@@ -349,14 +349,24 @@ width: 24px;
 height: 24px;
 `;
 
-export const DivNav = styled.img`
+/*Estilos para barra de navegación :D*/
 
-`;
-
-export const TOptionNav = styled.img`
-
-`;
-
+export const TOptionNav = styled.p`
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
+`
 export const ImgNav = styled.img`
-
-`;
+    width: 12px;
+    height: 12.15px;
+`
+export const DivNav = styled.div`
+    display: flex;
+    flex-direction:row;
+    gap:10px;
+    align-items:center;
+    padding-top:10px;
+    margin-left:6%;
+`

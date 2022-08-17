@@ -1,7 +1,7 @@
 
 import React, { Fragment, useRef } from 'react'
 import "../../styles/sass/LeftNav.scss"
-import {Div1,Section1,H3, P1,Img1,Div2,Div3,DivNav,ImgNav,TOptionNav} from '../../styles/home';
+import {Div1,Section1,H3, P1,Img1,Div2,Div3,DivNav,TOptionNav} from '../../styles/home';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 

@@ -15,7 +15,6 @@ import HomeBuy from '../containers/HomeBuy/HomeBuy';
 import Favorite from '../containers/home/Favorite';
 import Cart from '../containers/home/Cart';
 
-import HomeBuy from '../containers/HomeBuy/HomeBuy';
 import Search from '../containers/HomeBuy/Search';
 
 const AppRouters = () => {
@@ -42,11 +41,6 @@ const AppRouters = () => {
 
     return (
         <BrowserRouter>
-
-           
-            
-             
-               
             <Routes>
                 <Route path="/" element={ <Init/> }/>
                 <Route path="*" element={ <Init/> }/>

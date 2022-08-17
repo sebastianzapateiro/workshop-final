@@ -348,3 +348,15 @@ export const Img6 = styled.img`
 width: 24px;
 height: 24px;
 `;
+
+export const DivNav = styled.img`
+
+`;
+
+export const TOptionNav = styled.img`
+
+`;
+
+export const ImgNav = styled.img`
+
+`;
